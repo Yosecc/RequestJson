@@ -8,6 +8,14 @@ To install with composer:
 
 ```sh
 composer require yosecc/requestjson
+
+or
+
+git clone https://github.com/Yosecc/RequestJson.git
+cd RequestJson
+composer install
+php -S localhost:8000
+  
 ```
 
 Requires PHP 7.1 or newer.
@@ -23,7 +31,7 @@ Here's a basic usage example:
 
 require '/path/to/vendor/autoload.php';
 $json = new \Yosecc\RequestJson\RequestJson();
-  
+
 ```
 
 Functions
