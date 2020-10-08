@@ -38,9 +38,3 @@
 		        call_user_func($routeInfo[1]);
 		        break;
 		}
-	
-
-
-function get_user_handler($id){
-	echo 'df';
-}
