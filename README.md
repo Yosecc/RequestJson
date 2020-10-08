@@ -11,6 +11,7 @@ composer require yosecc/requestjson
 ```
 
 Requires PHP 7.1 or newer.
+Requires .env  (example vlucas/phpdotenv)
 
 Usage
 -----
