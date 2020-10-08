@@ -12,7 +12,7 @@ composer require yosecc/requestjson
 or
 
 git clone https://github.com/Yosecc/RequestJson.git
-cd RequestJson
+cd RequestJson/
 composer install
 php -S localhost:8000
   
