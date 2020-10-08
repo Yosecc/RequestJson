@@ -1,0 +1,26 @@
+{
+    "name": "yosecc/requestjson",
+    "description": "yosecc/requestjson",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yosecc",
+            "email": "yosec.cervino@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.1@dev",
+        "nikic/fast-route": "^2.0@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*",
+         "vlucas/phpdotenv": "^5.2@dev"
+    },
+     "autoload":{
+        "psr-4": {
+            "Yosecc\\RequestJson\\": "src/"
+        }
+    }
+}
