@@ -14,12 +14,30 @@ class RequestJson
     	return new Methods();
     }
 
+    static function index(){
+    	$dat = new Methods();
+    	$data  = $dat->get('/posts');
+    	return require_once('../Resources/views/index.php');
+    }
+
+    static function get(){
+    	$rout = explode("1", $_REQUEST['tipo']);
+    	$route = $rout[0];
+    	if (isset($rout[1])) {
+    		$route .= $_REQUEST['id'].$rout[1];
+    	}
+    	$dat = new Methods();
+    	$data  = $dat->get($route);
+
+    	return require_once('../Resources/views/index.php');
+    }
+
     /**
 	 * Listing all resources 
 	 */
-	public static function posts(){
+	public function posts(){
 		$a = new Methods();
-		 return $a->get('/posts');
+		return $a->get('/posts');
 	}
 
 	/**
@@ -73,19 +91,5 @@ class RequestJson
 			return 422;
 		}
 	}
-
-	/*
-	* Listing nested resources
-	*/
-	public static function comments($id){
-		var_dump($id);
-		// if ($id) {
-		// 	$a = new Methods();
-		// 	return $a->get('posts/'.$id.'/comments');
-		// }else{
-		// 	return 422;
-		// }
-	}
 	
-
 }
