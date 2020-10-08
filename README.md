@@ -31,6 +31,7 @@ Here's a basic usage example:
 
 require '/path/to/vendor/autoload.php';
 $json = new \Yosecc\RequestJson\RequestJson();
+echo $json->posts();
 
 ```
 
