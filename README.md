@@ -7,7 +7,7 @@ Install
 To install with composer:
 
 ```sh
-composer require Yosecc/RequestJson
+composer require yosecc/requestjson
 ```
 
 Requires PHP 7.1 or newer.
